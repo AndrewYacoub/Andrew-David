@@ -1,9 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
 
-    </head>
-    <body>
-        <h2>"Hello World!"</h2>
-    </body>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1 id="title" >Microverse Student Survey Form</h1>
+  <p id="description" >This is for students included in Microverse camp</p>
+                                           
+ <form id="survey-form">
+     <div class="form-group">
+         <label id="name-label" > Name </label>
+         <input id="name" type="text" class="form-control" name="name" placeholder="Please enter your name" required>
+     </div>
+     <div class="form-group">
+         <label id="email-label">Email</label>
+         <input id="email" type="text"  class="form-control" placeholder="Please enter your Email" required>
+     </div>
+     <div class="form-group">
+       <label id="number-label">Age</label>
+       <input id="number" type="number" min="10" max="99" placeholder="How old you?" name="number" class="form-control" >
+     </div>
+     
+     <div class="dropdown form-group">
+        <label id="role-label">What is your role?</label>
+        <select class="form-control dropdown-toggle" aria-placeholder="What's your job" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <option disabled selected value>Please choose</option>
+            <option value="student">Student</option>
+        <option value="student">Fresh Graduated</option>
+        <option value="student">Working</option>
+        <option value="student">Not Working</option>
+        </select>
+        
+      </div>
+      <div class="form-group">
+        <p id="role-label">How have you heared about us?</p>
+        <label>
+            <input name="user-heared" type="radio" class="input-radio" checked>
+            Facebook 
+        </label>
+        <br/>
+        <label>
+            <input name="user-heared" type="radio" class="input-radio">
+            Twitter 
+        </label>
+        <br/>
+        <label>
+            <input name="user-heared" type="radio" class="input-radio">
+            Insatgram 
+        </label>
+        <br/>
+      </div>
+     <div class="form-group">
+        <p id="role-label">What is the subjects you have studied before?</p>
+        <label>
+            <input value="user-knowledge" type="checkbox" class="input-checkbox" checked>
+            HTML 
+        </label>
+        <br/>
+        <label>
+            <input value="user-knowledge" type="checkbox" class="input-checkbox">
+            CSS 
+        </label>
+        <br/>
+        <label>
+            <input value="user-knowledge" type="checkbox" class="input-checkbox">
+            JavaScript 
+        </label>
+        <br/>
+        <label>
+            <input value="user-knowledge" type="checkbox" class="input-checkbox">
+            Bootstrap 
+        </label>
+        <br/>
+        <label>
+            <input value="user-knowledge" type="checkbox" class="input-checkbox">
+            Node.js 
+        </label>
+        <br/>
+        <label>
+            <input name="user-recommend" type="checkbox" class="input-checkbox">
+            Ruby 
+        </label>
+        <br/>
+        <label>
+            <input name="user-recommend" type="checkbox" class="input-checkbox">
+            Ruby on Rails 
+        </label>
+        <br/>
+     </div>
+     <div class="form-group">
+         <p>Please if you have any comments let us know...</p>
+         <textarea class="input-textarea" placeholder="Please leave your comment here..">
+
+         </textarea>
+     </div>
+     <div class="form-group">
+         <button type="submit" id="submit" class="submit-button">Submit</button>
+     </div>
+ </form>
+
+</div>
+
+</body>
 </html>
