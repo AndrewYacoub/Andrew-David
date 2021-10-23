@@ -7,3 +7,56 @@
 {
     margin-left: 250px;
 }
+#survey-form
+{
+  background-color: rgba(100, 148, 237, 0.356);
+  width: 500px;
+  margin-left:200px;
+}
+.form-group
+{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+body{
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white
+}
+p
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+h1{
+    color: white;
+}
+
+button
+{
+    width: 300px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: tomato;
+    color: white;
+    border: white;
+    border-radius:30px;
+}
+
+textarea
+{
+    width: 400px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
